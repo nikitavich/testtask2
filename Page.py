@@ -26,25 +26,23 @@ class Downloads(BasePage):
     def click_on_the_home_directory(self):
         check_box = self.find_element(Locators.ELEMENT_HOME_DIRECTORY)
         check_box.click()
-        check_box.is_displayed()
+        check_box = check_box.is_displayed()
         return check_box
 
     def click_on_the_downloads_directory(self):
         check_box = self.find_element(Locators.ELEMENT_DOWNLOADS_DIRECTORY)
         check_box.click()
-        check_box.is_displayed()
+
         return check_box
 
     def click_on_the_downloads(self):
         check_box = self.find_element(Locators.ELEMENT_DOWNLOADS)
         check_box.click()
-        check_box.is_displayed()
         return check_box
 
     def click_on_the_wordfile(self):
         check_box = self.find_element(Locators.ELEMENT_WORDFILE)
         check_box.click()
-        check_box.is_displayed()
         return check_box
 
     def check_message(self):

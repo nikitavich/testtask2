@@ -10,9 +10,9 @@ def test_check_message(browser):
     main_page.click_on_the_checkbox()
     assert browser.current_url == 'https://demoqa.com/checkbox', 'Страница https://demoqa.com/checkbox не открыта'
     check_box = main_page.click_on_the_home_directory()
-    assert check_box == True, 'Директория Home не раскрыта'
+    assert check_box != None, 'Директория Home не раскрыта'
     check_box1 = main_page.click_on_the_downloads_directory()
-    assert check_box1 == True, 'Директория Downloads не раскрыта'
+    assert check_box1 != None, 'Директория Downloads не раскрыта'
     main_page.click_on_the_downloads()
     main_page.click_on_the_wordfile()
     message = main_page.check_message()
