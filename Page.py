@@ -32,7 +32,6 @@ class Downloads(BasePage):
     def click_on_the_downloads_directory(self):
         check_box = self.find_element(Locators.ELEMENT_DOWNLOADS_DIRECTORY)
         check_box.click()
-
         return check_box
 
     def click_on_the_downloads(self):
